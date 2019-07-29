@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- ЯНДЕКС МЕТРИКА -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53990014, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/53990014" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /ЯНДЕКС МЕТРИКА -->
+  <!-- Подключение Стилей карусели -->
+  <link rel="stylesheet" href="styles/slide.css">
+  <!-- Подключение Стилей летающих частиц -->
+  <link rel="stylesheet" href="styles/firefly.css">
+  <!-- Подключение нормалайза, своеобразного сброса стилей браузеров,для корректной работы -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- Подключение Стилей параллакса -->
+  <link rel="stylesheet" href="parallax/parallax.css">
+  <!-- ПОДКЛЮЧЕНИЕ БИБЛИОТЕКИ АНИМАЦИИ -->
+  <link href="styles/animate.css" rel="stylesheet">
+  <!-- Подключение BOOTSTRAP.CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Подключение ОСНОВНЫХ СТИЛЕЙ ГЛАВНОЙ СТРАНИЦЫ-->
+  <link href="styles/index.css" rel="stylesheet">
+  <!-- Подключение JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+  <!-- Неведомые мета Подключения,регулирующие судя по всему scale экрана, а также ставит ширину контента равню ширине дисплея -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Запрет на кэширование сайта -->
+  <!-- <meta http-equiv="Cache-Control" content="no-cache"> -->
+  <!-- Заголовки, теги и всякая чепуха для лучшей индексации сайта "indie game"-->
+  <title>DÖRN: бесплатная инди-игра</title>
+  <!-- Ключевые слова -->
+  <meta name="keywords" content="игра, инди игра, бесплатно, исходный код, эмбиент">
+  <meta name="description" content="игровой проект, где тебе предстоит пройти через мир воспоминаний">
+  <meta http-equiv="content-language" content="ru">
+  <meta name="author" content="Данил Куксенок">
+  <meta name="copyright" content="Все права принадлежат команде разработчиков DÖRN">
+</head>
+
+
+<body>
+  <!-- БЛОК С ПАРАЛЛАКСОМ -->
+  <div id='hero'>
+    <!-- Слои параллакса -->
+    <!-- Первый слой -->
+    <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+    <!-- Слой с логотипом DÖRN! -->
+    <div class='layer' data-depth='0.10' data-type='parallax'>
+      <center><img src="Logo/ver9.png" align="right middle" width="960" height="540"></center>
+    </div>
+    <!-- /Слой с логотипом DÖRN! -->
+    <!-- Второй слой -->
+    <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+    <!-- Третий слой -->
+    <div class='layer-3 layer' data-depth='0.60' data-type='parallax'></div>
+    <!-- Четвертый слой -->
+    <div class='layer-4 layer' data-depth='0.70' data-type='parallax'></div>
+    <!-- Пятый слой -->
+    <!-- <div class='layer-5 layer' data-depth='0.80' data-type='parallax'></div> -->
+    <!-- Слой с частицами, летающими точками -->
+    <div class='layer-overlay layer' data-depth='1' data-type='parallax'>
+      <!-- Частицы для параллакса -->
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <!-- /Частицы для параллакса -->
+    </div>
+    <!-- /Слой с частицами, летающими точками -->
+    <!-- Шестой слой -->
+    <div class='layer-6 layer' data-depth='0.10' data-type='parallax'></div>
+    <!-- /Слои параллакса -->
+  </div>
+  <!-- /БЛОК С ПАРАЛЛАКСОМ -->
+  <!-- ПАРАЛЛАКС версия для телефона -->
+  <div id='hero-mobile'></div>
+  <!-- /ПАРАЛЛАКС версия для телефона -->
+
+
+  <!-- Меню,которое выезжает -->
+  <div class="header">
+    <header style="display: none"></header>
+    <div class="menu_list text-center">
+      <div id="menu_logo" class="list_el"><a class="head_link" href="#hero">DÖRN</a></div>
+      <div class="list_el"><a class="head_link" href="#main">Главная</a></div>
+      <div class="list_el"><a class="head_link" href="#discord">Новости</a></div>
+      <div class="list_el"><a class="head_link" href="#about_us">О нас</a></div>
+      <div class="list_el"><a class="head_link" href="en.html">Ru / En</a></div>
+    </div>
+  </div>
+  <!-- /Меню,которое выезжает -->
+
+  <!-- БЛОК СО ВСЕМ КОНТЕНТОМ САЙТА, НЕ СТОИЛО ВСЕ ПОД ОДИН БЛОК ОБЪЕДИНЯТЬ -->
+  <div id='content'>
+    <!-- БЛОК СО ВСЕМ КОНТЕНТОМ САЙТА,КОТОРЫЙ ЗАЧЕМ-ТО ОБЕРНУТ В КЛАСС КОНТЕЙНЕРА -->
+    <div class='container'>
+      <!-- БЛОК ВСЕГО САЙТА ОБЕРНУТЫЙ В ТЕГ СЕКЦИИ -->
+      <section class='first-section'>
+
+        <!-- БЛОК С ПОДПИСЬЮ СРАЗУ ПОСЛЕ ПАРАЛЛАКСА -->
+        <div class='row justify-content-center'>
+          <div class="text-center lozung">
+            <h3 class="zag">Этот путь предстоит каждому!
+            </h3>
+          </div>
+        </div>
+        <!-- /БЛОК С ПОДПИСЬЮ СРАЗУ ПОСЛЕ ПАРАЛЛАКСА -->
+
+        <!-- БЛОК,КОТОРЫЙ СОВМЕЩАЕТ В СЕБЕ АБСОЛЮТНО ВСЕ,ПОСЛЕ ПОДПИСИ К ПАРАЛЛАКСУ (ХУЖЕ БЫТЬ НЕ МОЖЕТ) -->
+        <div class='row'>
+          <!-- КАРУСЕЛЬ + ПОДПИСЬ СБОКУ/СНИЗУ -->
+          <div class="container carous_opis" id="main">
+            <div class="row">
+              <div class="caros_title col-sm-6 text-center">
+                <!-- Карусель контейнер -->
+                <div class="carousel-container" style="width:100%;">
+                  <div class="carousel my-carousel carousel--translate">
+                    <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+                    <input class="carousel__activator" type="radio" name="carousel" id="G" />
+                    <input class="carousel__activator" type="radio" name="carousel" id="H" />
+                    <input class="carousel__activator" type="radio" name="carousel" id="I" />
+                    <input class="carousel__activator" type="radio" name="carousel" id="J" />
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="J"></label>
+                      <label class="carousel__control carousel__control--forward" for="G"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="F"></label>
+                      <label class="carousel__control carousel__control--forward" for="H"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="G"></label>
+                      <label class="carousel__control carousel__control--forward" for="I"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="H"></label>
+                      <label class="carousel__control carousel__control--forward" for="J"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="I"></label>
+                      <label class="carousel__control carousel__control--forward" for="F"></label>
+                    </div>
+                    <div class="carousel__track">
+                      <li class="carousel__slide">
+                      </li>
+                      <li class="carousel__slide">
+                      </li>
+                      <li class="carousel__slide">
+                      </li>
+                      <li class="carousel__slide">
+                      </li>
+                      <li class="carousel__slide">
+                      </li>
+                    </div>
+                    <div class="carousel__indicators">
+                      <label class="carousel__indicator" for="F"></label>
+                      <label class="carousel__indicator" for="G"></label>
+                      <label class="carousel__indicator" for="H"></label>
+                      <label class="carousel__indicator" for="I"></label>
+                      <label class="carousel__indicator" for="J"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Карусель контейнер   -->
+
+              <!-- ПОДПИСЬ РЯДОМ С КАРУСЕЛЬЮ -->
+              <div class='col-sm-6 carousel_label'>
+                <div class="carousel_label_block">
+                  <p>DÖRN - Это грохот войны, тьма
+                    настигающая нас. Это лицо страха и боли. Главный герой попадает в ужасающий
+                    период истории. Что он видит вокруг,что твориться в его голове? Это и предстоит
+                    вам узнать!</p>
+                </div>
+              </div>
+              <!-- /ПОДПИСЬ РЯДОМ С КАРУСЕЛЬЮ -->
+            </div>
+          </div>
+          <!-- /КАРУСЕЛЬ + ПОДПИСЬ СБОКУ/СНИЗУ -->
+
+          <!-- РАМКА ТВИЧА -->
+          <div class="twitch">
+            <div class="text-center">TWITCH <img class="twitch_logo" src="Logo/twitch.png">
+            </div>
+          </div>
+          <iframe class="tw" src="https://player.twitch.tv/?channel=sedreww" frameborder="0" allowfullscreen="true"
+            scrolling="no" height="500" width="1300"></iframe>
+
+
+          <!-- АУДИО -->
+          <div class="sound_label">
+            <div class="text-center">SoundTrack</div>
+          </div>
+          <div class="sound_block col-12">
+            <audio id="audio" class='track col-sm-12' preload="none" controls>
+              <source src="music/Monkey And Crab 2.mp3" />
+            </audio>
+            <audio class='track col-sm-12' preload="none" controls>
+              <source src="music/Monkey And Crab 2.mp3" />
+            </audio>
+            <audio class='track col-sm-12' preload="none" controls>
+              <source src="music/Monkey And Crab 2.mp3" />
+            </audio>
+            <audio class='track col-sm-12' preload="none" controls>
+              <source src="music/Monkey And Crab 2.mp3" />
+            </audio>
+            <audio class='track col-sm-12' preload="none" controls>
+              <source src="music/Monkey And Crab 2.mp3" />
+            </audio>
+          </div>
+
+          <!-- Блок с дискордом -->
+          <div class="mt-5 discord text-center" id="discord">
+            <widgetbot server="539515787556421638" channel="593103836357328897" width="100%" height="600"
+              shard="https://disweb.deploys.io"></widgetbot>
+            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+          </div>
+          <!-- Блок с мобильным дискордом -->
+          <div class="discord_mobile">
+            <iframe src="https://discordapp.com/widget?id=539515787556421638&theme=dark" width="80%" height="100%"
+              allowtransparency="true" frameborder="0"></iframe>
+          </div>
+
+
+          <div class="text-center about_us" id="about_us">
+            <p>Проект DÖRN делается энтузиастами, которые хотят внести свой малый вклад культуру. Весь
+              разработанный материал размещает в открытом доступе. Ты можешь скачать себе любимый
+              саундтрек или арт и все другие исходные файлы проекта,
+              включая программный код. Если же у тебя есть идея, ты можешь стать одним из нас. А также у
+              тебя есть возможность стать спонсором и ускорить разработку проекта. </p>
+            <a href='https://donate.qiwi.com/payin/sedrew' target="_blank">
+              Нажми,чтобы поддержать проект!
+            </a>
+          </div>
+
+          <!-- Блок с лицензией -->
+          <div class="text-center license">
+            <p>Данная работа распространяется на условиях лицензии Commons
+              Attribution Share-Alike 4.0. У вас есть право свободно распространять и модифицировать
+              это произведение в соответствии с условиями лицензии.
+            </p>
+          </div>
+          <!-- /Блок с лицензией -->
+
+          <!-- Блок с донатом -->
+          <div class="fixed-bottom footer_donate">
+            <div class="donate text-center"> <a href="https://donate.qiwi.com/payin/sedrew" target="_blank">
+                <div class="donation_alert">
+                  <!-- <div class="donation_nadpis text-center animated jackInTheBox">
+                    <p>Поддержите проект!</p>
+                  </div> -->
+                  <div class="text-center">
+                    <img src="Logo/don.png" class="animated bounce infinite img_donate">
+                  </div>
+                  <a class='btn btn-warning col-11 btn_donate animated pulse infinite'>Поддержи проект!</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /Блок с донатом -->
+          <div class="fixed-bottom donate_mobile text-center pb-2">
+            <a class="btn btn-warning col-11" href="https://donate.qiwi.com/payin/sedrew">
+              <!-- <img class="ml-1" height="25px" width="25px" src="Logo/donate_mobile.png"> -->
+              <span>Поддержи проект!</span></a>
+          </div>
+          <!-- /Блок с донатом мобильным -->
+
+        </div>
+        <!-- /БЛОК,КОТОРЫЙ СОВМЕЩАЕТ В СЕБЕ АБСОЛЮТНО ВСЕ,ПОСЛЕ ПОДПИСИ К ПАРАЛЛАКСУ (ХУЖЕ БЫТЬ НЕ МОЖЕТ) -->
+      </section>
+      <!-- /БЛОК ВСЕГО САЙТА ОБЕРНУТЫЙ В ТЕГ СЕКЦИИ -->
+    </div>
+    <!-- /БЛОК СО ВСЕМ КОНТЕНТОМ САЙТА,КОТОРЫЙ ЗАЧЕМ-ТО ОБЕРНУТ В КЛАСС КОНТЕЙНЕРА -->
+  </div>
+  <!-- /БЛОК СО ВСЕМ КОНТЕНТОМ САЙТА, НЕ СТОИЛО ВСЕ ПОД ОДИН БЛОК ОБЪЕДИНЯТЬ -->
+
+  <!--ПОДКЛЮЧЕНИЕ СКРИПТОВ ПАРАЛЛАКСА-->
+  <script src="parallax/parallax.js"></script>
+  <!-- Подключение BOOTSTRAP.JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ Мягкой прокрутки -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.9/SmoothScroll.min.js"></script>
+  <!-- Подключение своего скрипта -->
+  <script src="script/script.js"></script>
+  <script src="script/device.js"></script>
+</body>
+
+</html>
