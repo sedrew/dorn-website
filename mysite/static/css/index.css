@@ -1,0 +1,261 @@
+/* Общие стили */
+@media (max-width: 767px) {
+  p {
+    font-size: 15px;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+a:active,a:hover,a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  color: rgb(255, 255, 255);
+}
+/* Общие стили */
+
+
+/* Выезжающее меню */
+.header {
+  /* Нужно для скрипта,не убирать */
+  display: none; 
+}
+.menu_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  background: #100c09;
+  color: white;
+}
+.list_el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+.list_el:not(:first-child):not(:last-child) {
+  margin: 0px 20px 0px 20px;
+}
+.head_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.list_el:hover {
+  background: rgb(164, 110, 65);
+}
+/* Выезжающее меню */
+
+
+/* Лозунг */
+@media (max-width: 767px) { 
+  h1,.h1,.zag {
+    font-size: 25px;
+  }
+}
+.lozung {
+  background-color: #32231b;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  margin:10px 10px 10px 10px;
+  width: 100%;
+}
+/* Лозунг */
+
+
+/* Карусель+Подпись к карусели */
+.carous_opis {
+  margin-top: 50px;
+}
+.caros_title {
+  padding:10px;
+}
+/* Карусель+Подпись к карусели */
+
+
+/* Подпись к карусели */
+@media (max-width:767px) {
+  .carousel {
+    width: 85%;
+    transform: scale(1)
+  }
+  .carous_opis {
+    margin-top: -100px;
+  }
+}
+.carousel_label {
+  display:flex;
+  align-items: center;
+  border-radius: 15px;
+}
+.carousel_label_block {
+  background-color: #32231b;
+  border-radius: 10px;
+}
+.carousel_label_block p {
+  color:white;
+  font-size: 17px;
+  padding:15px;
+}
+/* Подпись к карусели */
+
+
+/* Твитч */
+@media (max-width:767px) {
+  iframe {
+    height: 300px;
+  }
+}
+.twitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: white;
+  margin: 100px 0px 0px 0px;
+  font-size: 40px;
+}
+.twitch_logo {
+  margin-left:10px;
+  margin-bottom: 8px;
+  width: 50px;
+}
+/* Твитч */
+
+
+/* Музыка */
+.sound_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: white;
+  margin: 40px 0px 0px 0px;
+  font-size: 40px;
+}
+.sound_block {
+  background: #32231b;
+  padding:10px 0px 25px 0px;
+  border-radius: 15px;
+}
+.track {
+  margin-top:5px;
+}
+audio {
+  outline: none;
+}
+/* Музыка */
+
+
+/*  Дискорд */
+.discord {
+  background-color: #32231b;
+  width:100%;
+}
+.discord_mobile {
+  display: none;
+}
+@media (max-width:767px) {
+  .discord{ 
+    display: none;
+  }
+  .discord_mobile {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+/* Дискорд */
+
+
+/*  Блок о нас */
+.about_us {
+  background-color: #32231b;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 10px 10px 10px;
+}
+.about_us p,
+.about_us a {
+  color: white;
+}
+/* Блок о нас */
+
+
+/* Донат */
+.footer_donate {
+  padding-left: 83%;
+  width: 200px; 
+}
+.donate {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  padding: 20px 5px 4px 5px;
+  background-color: #32231b;
+  height: 250px;
+  width: 200px;
+  border-radius: 15px 15px 0px 0px;
+}
+.donate:hover {
+  cursor: pointer;
+}
+.donation_nadpis {
+  padding-bottom: 20%;
+}
+.img_donate {
+  margin:30px 0px 5px 0px;
+}
+.btn_donate {
+  margin:20px 0px 10px 0px;
+}
+.btn-warning {
+  background-color: #BA9545;
+  border: none;
+}
+.donate_mobile {
+  display: none;
+}
+/* Донат */
+
+
+/* Блок с лицензией */
+.license {
+  background-color:#32231b;
+  border-radius: 10px; 
+  padding: 10px; 
+  color: #ffffff;
+  margin:10px 10px 10px 10px;
+}
+.license p {
+  font-size: 13px;
+}
+/*Блок с лицензией */
+
+
+/* Скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #241f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #969393;
+  border-radius: 5px;
+  height: 40px;
+}
+/* Скроллбар */
